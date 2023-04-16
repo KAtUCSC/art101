@@ -1,9 +1,40 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
+body {
+  background-color: #000;
+}
+
+#content {
     padding: 10px;
     margin-bottom: 10px;
     border: solid 1px #888;
-    background-color: #DDD8C4;
+    background-color: #2a331f;
+    color: white;
   }
+
+  .rainbow {
+    -webkit-animation: rainbow 5s infinite;
+}
+@-webkit-keyframes rainbow{
+  0% {color: red;}
+  16% {color: orange;}
+  33% {color: yellow;}
+  50% {color: green;}
+  66% {color: blue;}
+  83% {color: indigo;}
+  100% {color: violet;}
+}
+
+.rainbow-two {
+  -webkit-animation: rainbowtwo 5s infinite;
+}
+@-webkit-keyframes rainbowtwo{
+0% {color: blue;}
+16% {color: indigo;}
+33% {color: violet;}
+50% {color: red;}
+66% {color: orange;}
+83% {color: yellow;}
+100% {color: green;}
+}
